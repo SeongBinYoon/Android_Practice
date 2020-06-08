@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         //버튼 선언, xml에서 가져오기
         Button btn_write = (Button) findViewById(R.id.btn_write);
 
