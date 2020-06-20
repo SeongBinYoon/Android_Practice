@@ -42,6 +42,19 @@ public class MainActivity extends AppCompatActivity {
         data.add("post1 - Paul - 2020/6/6");
         data.add("post2 - Mike - 2020/6/7");
         data.add("post3 - Sarah - 2020/6/8");
+        data.add("post4 - alpha - 2020/6/9");
+        data.add("post5 - bravo - 2020/6/9");
+        data.add("post6 - charlie - 2020/6/9");
+        data.add("post7 - delta - 2020/6/20");
+        data.add("post8 - echo - 2020/6/20");
+        data.add("post9 - foxtrot - 2020/6/20");
+        data.add("post10 - golf - 2020/6/20");
+        data.add("post11 - hotel - 2020/6/20");
+        data.add("post12 - india - 2020/6/20");
+        data.add("post13 - juliet - 2020/6/20");
+        data.add("post14 - kilo - 2020/6/20");
+        data.add("post15 - lima - 2020/6/20");
+
         //상태 저장
         adapter.notifyDataSetChanged();
 
