@@ -16,6 +16,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private long time= 0;
+
     //받아올 data(사용자가 쓴 글)
     List<String> data = new ArrayList<>();
 
@@ -80,8 +82,19 @@ public class MainActivity extends AppCompatActivity {
                 //fill blank -> Activity name.class
                 Intent intent = new Intent(MainActivity.this, WriteActivity.class);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(),"새 게시글 작성",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "새 게시글 작성", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    //뒤로가기 버튼을 두번누르면 종료
+    @Override
+    public void onBackPressed(){
+        if (System.currentTimeMillis() - time >= 2000) {
+            time = System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(), "뒤로가기 버튼을 한번 더 누르면 종료합니다.", Toast.LENGTH_SHORT).show();
+        } else if (System.currentTimeMillis() - time < 2000) {
+            finish();
+        }
     }
 }
