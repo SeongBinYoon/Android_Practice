@@ -55,4 +55,14 @@
         android:textSize="20dp">
     </TextView>
 
+    <Button
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Like"></Button>
+
 </RelativeLayout>
